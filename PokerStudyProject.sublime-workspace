@@ -1,0 +1,1780 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"valo",
+				"valoresOrdenados"
+			],
+			[
+				"qty",
+				"qtyValues"
+			],
+			[
+				"order",
+				"orderStraight"
+			],
+			[
+				"arrayk",
+				"array_keys"
+			],
+			[
+				"carfr",
+				"cardsFromPlayer"
+			],
+			[
+				"shuff",
+				"shuffleCards	(Desck.php)"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"users_",
+				"users_new"
+			],
+			[
+				"added",
+				"addedusers"
+			],
+			[
+				"find",
+				"findUser"
+			],
+			[
+				"File",
+				"File-type	File-type"
+			],
+			[
+				"par",
+				"parseCells〔function〕"
+			],
+			[
+				"colums",
+				"columns"
+			],
+			[
+				"getSheet",
+				"getSheetCount〔function〕"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"objec",
+				"object_id	(ObjectPreference.php)"
+			],
+			[
+				"obpre",
+				"objectPreference"
+			],
+			[
+				"Input-",
+				"Input-except	Input-except"
+			],
+			[
+				"getProdu",
+				"getProductPrivacy"
+			],
+			[
+				"login",
+				"loginController"
+			],
+			[
+				"produc",
+				"products"
+			],
+			[
+				"Redire",
+				"Redirect-back	Redirect-back"
+			],
+			[
+				"getUserPro",
+				"getUserProduct"
+			],
+			[
+				"usercreatin",
+				"userCreationSucceds"
+			],
+			[
+				"creat",
+				"create"
+			],
+			[
+				"userCre",
+				"userCreator"
+			],
+			[
+				"userCrea",
+				"userCreationSucceds"
+			],
+			[
+				"UserCreat",
+				"UserCreatorListener"
+			],
+			[
+				"coursein",
+				"course_info"
+			],
+			[
+				"even",
+				"eventName"
+			],
+			[
+				"paymen",
+				"payment_type"
+			],
+			[
+				"payme",
+				"paymentTrack"
+			],
+			[
+				"Paymen",
+				"PaymentTrack"
+			],
+			[
+				"pay",
+				"paymentTrack"
+			],
+			[
+				"remi",
+				"reminders"
+			],
+			[
+				"UserPro",
+				"UserProviderInterface"
+			],
+			[
+				"Jaentendi",
+				"JaentendiUserProvider"
+			],
+			[
+				"rEMINDE",
+				"RemindableInterface"
+			],
+			[
+				"Redirect",
+				"Redirect-to	Redirect-to"
+			],
+			[
+				"subs",
+				"subscription"
+			],
+			[
+				"Auth",
+				"Auth::user"
+			],
+			[
+				"sub",
+				"subscription"
+			],
+			[
+				"subscript",
+				"subscription"
+			],
+			[
+				"paym",
+				"payment"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"prd",
+				"product"
+			],
+			[
+				"payment",
+				"payment_type"
+			],
+			[
+				"status",
+				"status_transactions"
+			],
+			[
+				"pagse",
+				"pagseguro_status"
+			],
+			[
+				"chann",
+				"channel_transaction_id"
+			],
+			[
+				"trans",
+				"transaction_id"
+			],
+			[
+				"inter",
+				"internal_transaction_id"
+			],
+			[
+				"wagner",
+				"wagner@jaentendi"
+			],
+			[
+				"PagSegur",
+				"PagSeguroLibrary"
+			],
+			[
+				"pagseg",
+				"pagseguro_1"
+			],
+			[
+				"cou",
+				"course_id"
+			],
+			[
+				"produ",
+				"product"
+			],
+			[
+				"genera",
+				"generateBoleto"
+			],
+			[
+				"subscrip",
+				"subscription"
+			],
+			[
+				"created",
+				"created_at"
+			],
+			[
+				"groupcour",
+				"group_courses_ids"
+			],
+			[
+				"lec",
+				"lectures"
+			],
+			[
+				"content",
+				"content_type"
+			],
+			[
+				"retu",
+				"returnObj"
+			],
+			[
+				"analy",
+				"analyticsDomain"
+			],
+			[
+				"arraymerge",
+				"array_merge"
+			],
+			[
+				"Cour",
+				"Course::find"
+			],
+			[
+				"Produ",
+				"Product::find"
+			],
+			[
+				"short",
+				"short_url"
+			],
+			[
+				"defa",
+				"defaultView"
+			],
+			[
+				"cour",
+				"course_id"
+			],
+			[
+				"Messa",
+				"MessageBag"
+			],
+			[
+				"validate",
+				"validateDataArray"
+			],
+			[
+				"prod",
+				"product"
+			],
+			[
+				"getPrefe",
+				"getPreferencesOption"
+			],
+			[
+				"add_",
+				"add_email_input"
+			],
+			[
+				"imagettf",
+				"imagettfbbox"
+			],
+			[
+				"Curs",
+				"Curso_Produto"
+			],
+			[
+				"Cur",
+				"Curso_Produto"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"empre",
+				"empresa_id"
+			],
+			[
+				"emp",
+				"empresa_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Game.php",
+			"settings":
+			{
+				"buffer_size": 2352,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Hand.php",
+			"settings":
+			{
+				"buffer_size": 10636,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Hands/Pair.php",
+			"settings":
+			{
+				"buffer_size": 808,
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "app/Hands/Hands.php",
+			"settings":
+			{
+				"buffer_size": 909,
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "/C/Users/Wagner.WAGNER-DELL/Downloads/PTHE.class.php",
+			"settings":
+			{
+				"buffer_size": 34417,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Wagner.WAGNER-DELL/Downloads/php poker class/inc.cls.pokertexasholdem.php",
+			"settings":
+			{
+				"buffer_size": 10848,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Table.php",
+			"settings":
+			{
+				"buffer_size": 553,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Deck.php",
+			"settings":
+			{
+				"buffer_size": 732,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Player.php",
+			"settings":
+			{
+				"buffer_size": 553,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Card.php",
+			"settings":
+			{
+				"buffer_size": 430,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"convto sp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"convert to s",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ident",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"sniff",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"indetation",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"sniffthis",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"sniff this",
+				"PHP Code Sniffer: Switch coding standard"
+			],
+			[
+				"codesniff",
+				"PHP Code Sniffer: Turn Execute On Save On"
+			],
+			[
+				"phpcs",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sniffthi",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"sniff thi",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"sniff this ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"codesni",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"phpcode",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"php",
+				"Snippet: SSH-setOutput"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"line",
+				"Sort Lines"
+			],
+			[
+				"lines",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"request",
+				"Laravel Facade: Request"
+			],
+			[
+				"url",
+				"Laravel Facade: URL"
+			],
+			[
+				"gitgutt",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"git",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"mail",
+				"Laravel Facade: Mail"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syntaphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"message",
+				"Snippet: CI - Log Message"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"controller",
+				"Snippet: CI - Base Controller"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 345.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Wagner.WAGNER-DELL/Downloads/PTHE.class.php",
+		"/C/Users/Wagner.WAGNER-DELL/Downloads/php poker class/inc.cls.pokertexasholdem.php",
+		"/C/Users/WAGNER~1.WAG/AppData/Local/Temp/7zE5F08.tmp/inc.cls.pokertexasholdem.php",
+		"/C/Users/Wagner.WAGNER-DELL/Developer/PokerStudyProject/app/Console/Commands/Inspire.php",
+		"/C/Users/Wagner.WAGNER-DELL/Developer/PokerStudyProject/app/Console/Commands/PlayPoker.php",
+		"/C/Users/Wagner.WAGNER-DELL/Developer/PokerStudyProject/app/Commands/PokerCommand.php",
+		"/C/Users/Wagner.WAGNER-DELL/Developer/PokerStudyProject/app/Console/Kernel.php",
+		"/C/Users/Wagner.WAGNER-DELL/Developer/PokerStudyProject/app/User.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/start/global.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/services/TrackUsers.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Track.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/site/lecture/lecture.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Content.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/LectureController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/BaseController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Course.php",
+		"/C/Users/Wagner.WAGNER-DELL/AppData/Roaming/Sublime Text 2/Packages/Phpcs/phpcs.sublime-settings",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/course_show.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminCourseController.php",
+		"/C/Users/Wagner.WAGNER-DELL/AppData/Roaming/Sublime Text 2/Packages/User/phpcs.sublime-settings",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/PagseguroController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/ProductController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/ProfileController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/RemindersController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/StaticPageController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/TrackController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/UserController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AttachmentController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/CadastroController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/ExamController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/HomeController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/ImageTestController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/LoginController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/CourseBuyController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/CourseCertificationController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/CourseController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/CourseNavigationController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminUserController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminClientGroupController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminContentController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminExamController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminImageController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminLectureController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminSectionController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminProductController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminController.php",
+		"/C/Users/Wagner.WAGNER-DELL/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Wagner.WAGNER-DELL/AppData/Roaming/Sublime Text 2/Packages/Phpcs/Default (Windows).sublime-keymap",
+		"/C/Users/Wagner.WAGNER-DELL/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminClientController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/lang/pt/validation.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/template/site.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/.gitignore",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/add_users_to_client_from_csv.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/uploads_admin/csv_users/importing/3.csv",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/UserClient.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/Lmsjaentendi/User/Creator.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/Lmsjaentendi/User/IUserCreatorListener.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/services/Login.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/User.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/UserGroup.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/commom/header_nav.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/commom/top_nav.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/composer.json",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/autoload.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/bootstrap/autoload.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/bootstrap/start.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Product.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/services/AccessValidation.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/site/course/aguarde_pagamento.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Lecture.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Exam.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/lang/pt/course.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/lang/en/course.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/facades/PagseguroFacade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/filters.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Attachment.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/CSV.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Readers/LaravelExcelReader.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Excel.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Classes/PHPExcel.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/phpoffice/phpexcel/Classes/PHPExcel.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Parsers/ExcelParser.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/RowCellIterator.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/uploads_admin/csv_users/importing/4.csv",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/config/packages/maatwebsite/excel/import.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/laravel/framework/src/Illuminate/Support/Collection.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Collections/RowCollection.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Collections/ExcelCollection.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/add_users_to_client.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Abstract.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Classes/FormatIdentifier.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/client_show.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/_ide_helpers.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/config/packages/maatwebsite/excel/csv.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminAttachmentController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/config/app.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/landing_page.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/edit.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Downloads/CAGEDEST_042015.txt",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/section_show.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/tests/TestCase.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/controllers/AdminAjaxCourseController.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/.codeclimate.yml",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/product_show.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/lecture_show.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Preferences.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/ObjectPreference.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/site/user/login.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Subscription.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/commom/footer_company.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Image.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/services/Pagseguro.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/site/course/lecture_list.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/site/user/cadastro.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/site/product/guest_home.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/site/product/course_list.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/models/Client.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/admin/user_show.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/database/migrations/2015_06_01_155942_alter_userclient_add_id_pk.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/views/home.blade.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/Lmsjaentendi/Course/CourseRepository.php",
+		"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/lmsjaentendi/app/services/Image.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Developer\\PokerStudyGroup\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\views\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\vendor\\maatwebsite\\excel\\src\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\controllers\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\views\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\controllers\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\views\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\vendor",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\vendor\\pagseguro",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\",
+			"C:\\Users\\Wagner.WAGNER-DELL\\Dropbox\\DEV\\Projetos\\lmsjaentendi\\app",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"private",
+			"Values",
+			"$i",
+			"cards",
+			"orderStraight",
+			"private",
+			"orderValues",
+			"return",
+			"public",
+			"suits",
+			"qty_suits",
+			"qty_values",
+			"value",
+			"values",
+			"flip_2d",
+			"$cards",
+			"private",
+			"Value",
+			"values",
+			"$table",
+			"table",
+			"User",
+			"done",
+			"vimeo",
+			"300",
+			"jpg",
+			"class_name",
+			"jquery",
+			"boots",
+			"attri",
+			"file",
+			"getUsersFromCsv",
+			"        \n",
+			"h2",
+			"user",
+			"Creator",
+			"\"Rebecca\"",
+			"Form",
+			"csv",
+			"new",
+			"file",
+			"filer",
+			"Product",
+			"short_url",
+			"email",
+			"quer",
+			"Find",
+			"_setInpu",
+			"_init",
+			"public function get",
+			"public fun",
+			"parseCells",
+			"file",
+			"parseRows",
+			"parseWork",
+			"_parseFile",
+			"parser",
+			"indices",
+			"selectedSheetindices",
+			"indices",
+			"parser",
+			"_parseFil",
+			"function get",
+			"get",
+			"parseWorks",
+			"parseRows",
+			"getRowIterator",
+			"getRowIte",
+			"function getRow",
+			"function getCell",
+			"function get",
+			"ExcelParser",
+			"parseFile",
+			" get",
+			"_parseFile",
+			"n get",
+			"function load",
+			"skipBOM",
+			"skipBO",
+			"_openFile",
+			"loadInto",
+			"_init",
+			"_enableFilters",
+			"_init",
+			"_setReader",
+			"_setFormat",
+			"setExtension",
+			"_init",
+			"identi",
+			"canRead",
+			"Return",
+			"Return ",
+			"response",
+			"cpf",
+			"nome",
+			"\"",
+			"File",
+			"laravel",
+			"Upload",
+			"Form::open",
+			"section",
+			"add_section",
+			"addSec",
+			"$this->",
+			"verifyRules",
+			"ajax",
+			"ajaxPost",
+			"$i",
+			"$i=",
+			"upload_",
+			"            if (array_search('number', $arrValue) !== false) {\n                if (!is_numeric($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' needs to be Numeric type\"]);\n                }\n            }\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' is required\"]);\n                }\n            }\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' is required\"]);\n                }\n",
+			"'error' => \"'$key' is required\"",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' is required\"]);\n                }\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' is required\"]);\n                }\n            }\n            if (array_search('number', $arrValue) !== false) {\n                if (!is_numeric($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' needs to be Numeric type\"]);\n                }\n            }\n        }\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' is required\"]);\n                }\n            }\n            if (array_search('number', $arrValue) !== false) {\n                if (!is_numeric($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' needs to be Numeric type\"]);\n                }\n            }\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n            if (array_search('required', $arrValue) !== false) {\n                if (is_null($val)) {\n                    return Response::json(['success' => false, 'error' => \"'$key' is required\"]);\n                }\n            }\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n            $val = $input[$key];\n",
+			"        foreach ($rules as $key => $value) {\n            $arrValue = explode('|', $value);\n",
+			"foreach ($rul",
+			"end_sec",
+			"ajaxPost",
+			"client_product"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Game.php",
+					"settings":
+					{
+						"buffer_size": 2352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2271,
+								2271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1478.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Hand.php",
+					"settings":
+					{
+						"buffer_size": 10636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5840,
+								5840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2948.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Hands/Pair.php",
+					"settings":
+					{
+						"buffer_size": 808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								737,
+								737
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 71.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Hands/Hands.php",
+					"settings":
+					{
+						"buffer_size": 909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 239.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Wagner.WAGNER-DELL/Downloads/PTHE.class.php",
+					"settings":
+					{
+						"buffer_size": 34417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2213,
+								2213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1386.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Wagner.WAGNER-DELL/Downloads/php poker class/inc.cls.pokertexasholdem.php",
+					"settings":
+					{
+						"buffer_size": 10848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Table.php",
+					"settings":
+					{
+						"buffer_size": 553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								544,
+								544
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/Deck.php",
+					"settings":
+					{
+						"buffer_size": 732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								515,
+								515
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/Player.php",
+					"settings":
+					{
+						"buffer_size": 553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								553,
+								553
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/Card.php",
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pokercomm",
+				"app/Commands/PokerCommand.php"
+			],
+			[
+				"servicetrac",
+				"app/services/TrackUsers.php"
+			],
+			[
+				"track",
+				"app/models/Track.php"
+			],
+			[
+				"leccontr",
+				"app/controllers/LectureController.php"
+			],
+			[
+				"content",
+				"app/models/Content.php"
+			],
+			[
+				"appviewlecture",
+				"app/views/site/lecture/lecture.blade.php"
+			],
+			[
+				"basecontr",
+				"app/controllers/BaseController.php"
+			],
+			[
+				"modelcourse",
+				"app/models/Course.php"
+			],
+			[
+				"admincoursecontro",
+				"app/controllers/AdminCourseController.php"
+			],
+			[
+				"appviewcourseshow",
+				"app/views/admin/course_show.blade.php"
+			],
+			[
+				"adminusercon",
+				"app/controllers/AdminUserController.php"
+			],
+			[
+				"admincoursecon",
+				"app/controllers/AdminCourseController.php"
+			],
+			[
+				"courcontr",
+				"app/controllers/CourseController.php"
+			],
+			[
+				"usecont",
+				"app/controllers/UserController.php"
+			],
+			[
+				"templsite",
+				"app/views/template/site.blade.php"
+			],
+			[
+				"applangptvalida",
+				"app/lang/pt/validation.php"
+			],
+			[
+				"appviewcsv",
+				"app/views/admin/add_users_to_client_from_csv.blade.php"
+			],
+			[
+				"adminclient",
+				"app/controllers/AdminClientController.php"
+			],
+			[
+				"modeluser",
+				"app/models/User.php"
+			],
+			[
+				"login",
+				"app/services/Login.php"
+			],
+			[
+				"applmsjaentendi",
+				"app/Lmsjaentendi/User/IUserCreatorListener.php"
+			],
+			[
+				"creator",
+				"app/Lmsjaentendi/User/Creator.php"
+			],
+			[
+				"userclient",
+				"app/models/UserClient.php"
+			],
+			[
+				"usergroup",
+				"app/models/UserGroup.php"
+			],
+			[
+				"addusersto",
+				"app/views/admin/add_users_to_client_from_csv.blade.php"
+			],
+			[
+				"productcontro",
+				"app/controllers/ProductController.php"
+			],
+			[
+				"appviewscommom/",
+				"app/views/commom/header_nav.blade.php"
+			],
+			[
+				"appviews/commomtop",
+				"app/views/commom/top_nav.blade.php"
+			],
+			[
+				"adminclientcontr",
+				"app/controllers/AdminClientController.php"
+			],
+			[
+				"adminusercontro",
+				"app/controllers/AdminUserController.php"
+			],
+			[
+				"admincoursec",
+				"app/controllers/AdminCourseController.php"
+			],
+			[
+				"admincoursecontr",
+				"app/controllers/AdminCourseController.php"
+			],
+			[
+				"symfony/component/httpfoundation/response",
+				"vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php"
+			],
+			[
+				"coursenavigationcontroller",
+				"app/controllers/CourseNavigationController.php"
+			],
+			[
+				"appmodels/",
+				"app/models/Attachment.php"
+			],
+			[
+				"appmodelexam",
+				"app/models/Exam.php"
+			],
+			[
+				"rowcelliterato",
+				"vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/RowCellIterator.php"
+			],
+			[
+				"appconfigimpo",
+				"app/config/packages/maatwebsite/excel/import.php"
+			],
+			[
+				"illumisuportcollec",
+				"vendor/laravel/framework/src/Illuminate/Support/Collection.php"
+			],
+			[
+				"excelcollection",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Collections/ExcelCollection.php"
+			],
+			[
+				"rowcollect",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Collections/RowCollection.php"
+			],
+			[
+				"excelparser",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Parsers/ExcelParser.php"
+			],
+			[
+				"adduserto",
+				"app/views/admin/add_users_to_client_from_csv.blade.php"
+			],
+			[
+				"addusertoclien",
+				"app/views/admin/add_users_to_client.blade.php"
+			],
+			[
+				"excelrowcollec",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Collections/RowCollection.php"
+			],
+			[
+				"phpworksheet",
+				"vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet.php"
+			],
+			[
+				"adminclientcontroll",
+				"app/controllers/AdminClientController.php"
+			],
+			[
+				"phpexcel",
+				"vendor/phpoffice/phpexcel/Classes/PHPExcel.php"
+			],
+			[
+				"phpexcelreaderabstra",
+				"vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Abstract.php"
+			],
+			[
+				"excellaravelread",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Readers/LaravelExcelReader.php"
+			],
+			[
+				"phpexcelreadercsv",
+				"vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/CSV.php"
+			],
+			[
+				"formatiden",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Classes/FormatIdentifier.php"
+			],
+			[
+				"phpexceliofactor",
+				"vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php"
+			],
+			[
+				"usercreator",
+				"app/Lmsjaentendi/User/Creator.php"
+			],
+			[
+				"cadastro",
+				"app/controllers/CadastroController.php"
+			],
+			[
+				"collection",
+				"vendor/laravel/framework/src/Illuminate/Support/Collection.php"
+			],
+			[
+				"excelcollec",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Collections/ExcelCollection.php"
+			],
+			[
+				"rowcolle",
+				"vendor/maatwebsite/excel/src/Maatwebsite/Excel/Collections/RowCollection.php"
+			],
+			[
+				"adminattacon",
+				"app/controllers/AdminAttachmentController.php"
+			],
+			[
+				"attac",
+				"app/models/Attachment.php"
+			],
+			[
+				"appconapp",
+				"app/config/app.php"
+			],
+			[
+				"composjson",
+				"composer.json"
+			],
+			[
+				"attach",
+				"app/models/Attachment.php"
+			],
+			[
+				"adduserstocli",
+				"app/views/admin/add_users_to_client.blade.php"
+			],
+			[
+				"adminclientcontro",
+				"app/controllers/AdminClientController.php"
+			],
+			[
+				"appviewadminclientsho",
+				"app/views/admin/client_show.blade.php"
+			],
+			[
+				"appviewadmincourse",
+				"app/views/admin/course_show.blade.php"
+			],
+			[
+				"appviewadminedit",
+				"app/views/admin/edit.blade.php"
+			],
+			[
+				"appviewsadmin/section",
+				"app/views/admin/section_show.blade.php"
+			],
+			[
+				"admincontroller",
+				"app/controllers/AdminController.php"
+			],
+			[
+				"adminsection",
+				"app/controllers/AdminSectionController.php"
+			],
+			[
+				"appviewlandin",
+				"app/views/landing_page.blade.php"
+			],
+			[
+				"foundationtest",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php"
+			],
+			[
+				"coursecontroller",
+				"app/controllers/CourseCertificationController.php"
+			],
+			[
+				"coursecontro",
+				"app/controllers/CourseController.php"
+			],
+			[
+				"admincliencontr",
+				"app/controllers/AdminClientController.php"
+			],
+			[
+				"produccontroll",
+				"app/controllers/ProductController.php"
+			],
+			[
+				"objectprefe",
+				"app/models/ObjectPreference.php"
+			],
+			[
+				"prefere",
+				"app/models/Preferences.php"
+			],
+			[
+				"modelprefere",
+				"app/models/Preferences.php"
+			],
+			[
+				"modelprodut",
+				"app/models/Product.php"
+			],
+			[
+				"appviewsadminlecture",
+				"app/views/admin/lecture_show.blade.php"
+			],
+			[
+				"appmodelprodu",
+				"app/models/Product.php"
+			],
+			[
+				"appviewlogin",
+				"app/views/site/user/login.blade.php"
+			],
+			[
+				"adminproduct",
+				"app/views/admin/product_show.blade.php"
+			],
+			[
+				"adminprocont",
+				"app/controllers/AdminProductController.php"
+			],
+			[
+				"footercompan",
+				"app/views/commom/footer_company.blade.php"
+			],
+			[
+				"appmodelsubscr",
+				"app/models/Subscription.php"
+			],
+			[
+				"adminexamcontr",
+				"app/controllers/AdminExamController.php"
+			],
+			[
+				"appmodelcourse",
+				"app/models/Course.php"
+			],
+			[
+				"adminattach",
+				"app/controllers/AdminAttachmentController.php"
+			],
+			[
+				"user",
+				"app/models/User.php"
+			],
+			[
+				"attachment",
+				"app/models/Attachment.php"
+			],
+			[
+				"modelsimage",
+				"app/models/Image.php"
+			],
+			[
+				"imagetester",
+				"app/controllers/ImageTestController.php"
+			],
+			[
+				"coursecert",
+				"app/controllers/CourseCertificationController.php"
+			],
+			[
+				"adminprod",
+				"app/controllers/AdminProductController.php"
+			],
+			[
+				"adminexam",
+				"app/controllers/AdminExamController.php"
+			],
+			[
+				"admincontent",
+				"app/controllers/AdminContentController.php"
+			],
+			[
+				"adminlec",
+				"app/controllers/AdminLectureController.php"
+			],
+			[
+				"coursenavigatio",
+				"app/controllers/CourseNavigationController.php"
+			],
+			[
+				"landin",
+				"app/views/landing_page.blade.php"
+			],
+			[
+				"lecturecontro",
+				"app/controllers/LectureController.php"
+			],
+			[
+				"appservicepagse",
+				"app/services/Pagseguro.php"
+			],
+			[
+				"appmodelsproduct",
+				"app/models/Product.php"
+			],
+			[
+				"appviewslogin",
+				"app/views/site/user/login.blade.php"
+			],
+			[
+				"appviewscadastro",
+				"app/views/site/user/cadastro.blade.php"
+			],
+			[
+				"servlogin",
+				"app/services/Login.php"
+			],
+			[
+				"course",
+				"app/controllers/CourseNavigationController.php"
+			],
+			[
+				"coursebuy",
+				"app/controllers/CourseBuyController.php"
+			],
+			[
+				"appviewssite/course/",
+				"app/views/site/course/lecture_list.blade.php"
+			],
+			[
+				"productcontroller",
+				"app/controllers/ProductController.php"
+			],
+			[
+				"accessvalida",
+				"app/services/AccessValidation.php"
+			],
+			[
+				"product",
+				"app/models/Product.php"
+			],
+			[
+				"logincontroller",
+				"app/controllers/LoginController.php"
+			],
+			[
+				"produccontrol",
+				"app/controllers/ProductController.php"
+			],
+			[
+				"homecontro",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"guesthome",
+				"app/views/site/product/guest_home.blade.php"
+			],
+			[
+				"appviewssite/product/",
+				"app/views/site/product/course_list.blade.php"
+			],
+			[
+				"clientshow",
+				"app/views/admin/client_show.blade.php"
+			],
+			[
+				"modelclient",
+				"app/models/Client.php"
+			],
+			[
+				"alteruserclientadd",
+				"app/database/migrations/2015_06_01_155942_alter_userclient_add_id_pk.php"
+			],
+			[
+				"appviewsadmin/user",
+				"app/views/admin/user_show.blade.php"
+			],
+			[
+				"adminuser",
+				"app/controllers/AdminUserController.php"
+			],
+			[
+				"adminproductcontroll",
+				"app/controllers/AdminProductController.php"
+			],
+			[
+				"appviewshome",
+				"app/views/home.blade.php"
+			],
+			[
+				"coursebuycontroll",
+				"app/controllers/CourseBuyController.php"
+			],
+			[
+				"examcontroller",
+				"app/controllers/ExamController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Wagner.WAGNER-DELL/Documents/lmsjaentendi_dropbox.sublime-project"
+			],
+			[
+				"basec",
+				"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/basecamp.sublime-project"
+			],
+			[
+				"ppc",
+				"/C/Users/Wagner.WAGNER-DELL/Dropbox/DEV/Projetos/pp-champ/pp-champ.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true
+}
