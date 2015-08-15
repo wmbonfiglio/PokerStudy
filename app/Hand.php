@@ -15,6 +15,16 @@ class App\Hand#678 (8) {
 
 class Hand
 {
+    const POINTS_PAIR           = 10000000000;
+    const POINTS_TWOPAIRS       = 20000000000;
+    const POINTS_THREE          = 30000000000;
+    const POINTS_STRAIGHT       = 40000000000;
+    const POINTS_FLUSH          = 50000000000;
+    const POINTS_FULLHOUSE      = 60000000000;
+    const POINTS_FOUR           = 70000000000;
+    const POINTS_STRAIGHTFLUSH  = 80000000000;
+    const POINTS_ROYALFLUSH     = 90000000000;
+
     private $orderStraight;
     private $orderValues;
 
@@ -37,6 +47,8 @@ class Hand
      - One pair
      - High card
      */
+    
+    /* INICIALIZAÇÃO */
     public function __construct($cardsFromPlayer, $cardsFromTable)
     {
         $this->cards = array_merge($cardsFromPlayer, $cardsFromTable);
@@ -69,6 +81,7 @@ class Hand
         $this->qtySuits = count($this->suits);
     }
 
+    /* MÃOS */
     public function hasRoyalFlush()
     {
         // Faz duas verificações mais rápidas e com pequena probabilidade de acontecer
@@ -89,33 +102,12 @@ class Hand
         // TODO: Se tem Flush e uma sequencia, agora precisa garantir que são as mesmas cartas
         return true;
     }
-    /*
-    $a1 = new \App\Card('Ouros', 'A');
-    $a2 = new \App\Card('Paus', 'A');
-    $a3 = new \App\Card('Espadas', 'A');
-    $a4 = new \App\Card('Copas', 'A');
-    $t = new \App\Card('Ouros', 10);
-    $f = new \App\Card('Ouros', 5);
-    $th = new \App\Card('Ouros', 3);
-    $hand = new \App\Hand([$a1,$a2,$a3,$t,$f,$a4,$th], []);
-    $hand->hasFourkind(false);
-     */
-    
-    // OK
-    public function hasFourkind($returnCards = false)
+
+    public function hasFourkind()
     {
         foreach ($this->values as $value => $qty) {
             if ($qty == 4) {
-                if ($returnCards === false) {
-                    return $this->pointsOfValue($value);
-                } else {
-                    $cardsIndex = array_keys($this->arrayCards['value'], $value);
-                    $cards = [];
-                    foreach ($cardsIndex as $key) {
-                        $cards[] = $this->cards[$key];
-                    }
-                    return $cards;
-                }
+                return true;
             }
         }
         return false;
@@ -124,8 +116,8 @@ class Hand
     public function hasFullHouse()
     {
         // Verificação mais rápida e condição para o full house
-        if (!$this->hasTriple()) {
-            return false;
+        if ($this->hasTriple() && $this->hasPair()) {
+            return true;
         }
         // Caso tenha um triple, é possível que 1) tenha outro triple ou 2) tenha um double
         return false;
@@ -135,23 +127,109 @@ class Hand
     {
         foreach ($this->suits as $suit => $qty) {
             if ($qty >= 5) {
-                return $this->topValue();
+                return true;
+                // return $this->topValue();
             }
         }
         return false;
     }
-    /*
-    $a = new \App\Card('Ouros', 'A');
-    $k = new \App\Card('Ouros', 'K');
-    $q = new \App\Card('Ouros', 'Q');
-    $j = new \App\Card('Ouros', 'J');
-    $t = new \App\Card('Ouros', 10);
-    $f = new \App\Card('Ouros', 5);
-    $th = new \App\Card('Ouros', 3);
-    $hand = new \App\Hand([$a,$k], [$q,$j,$t,$f,$th]);
-    $hand->hasStraight();
-     */
+
     public function hasStraight()
+    {
+        $sequencia = 0;
+        $cards = [];
+        foreach ($this->cards as $card) {
+            $cards[$card->getValue()] = true;
+        }
+        for ($i=count($this->orderStraight)-1; $i>=0; $i--) {
+            if (isset($cards[$this->orderStraight[$i]])) {
+                if (++$sequencia == 5) {
+                    return true;
+                    // return $this->orderStraight[$i+4];
+                }
+            } else {
+                $sequencia = 0;
+            }
+        }
+        return false;
+    }
+    
+    public function hasTriple()
+    {
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 3) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public function hasTwoPairs()
+    {
+        $pairs = 0;
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 2) {
+                if (++$pairs == 2) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public function hasPair()
+    {
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 2) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /* PONTUAÇÃO MÃOS */
+    // TODO: precisa calcular os kickers - a conta para a mão está certa, falta tratar empates
+    public function pointsOfPair()
+    {
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 2) {
+                return $this->pointsOfValue($value);
+            }
+        }
+        return false;
+    }
+
+    public function pointsOfTwoPairs()
+    {
+        $points = [];
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 2) {
+                $points[] = $this->pointsOfValue($value);
+            }
+        }
+        rsort($points);
+        return $points[0] * 100 + $points[1];
+    }
+
+    public function pointsOfTriple()
+    {
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 3) {
+                return $this->pointsOfValue($value);
+            }
+        }
+        return false;
+    }
+
+    public function pointsOfFullHouse()
+    {
+        $pointsTriple = $this->pointsOfTriple();
+        $pointsPair = $this->pointsOfPair();
+
+        return $pointsTriple * 100 + $pointsPair;
+    }
+
+    public function pointsOfStraight()
     {
         $sequencia = 0;
         $cards = [];
@@ -169,42 +247,34 @@ class Hand
         }
         return false;
     }
-    
-    public function hasTriple()
+
+    public function pointsOfFlush()
+    {
+        $points = [];
+        foreach ($this->values as $value => $qty) {
+            $points[] = $this->pointsOfValue($value);
+        }
+        rsort($points);
+
+        return 
+            $points[0] * pow(10,8) 
+            + $points[1] * pow(10,6)
+            + $points[2] * pow(10,4)
+            + $points[3] * pow(10,2)
+            + $points[4];
+    }
+
+    public function pointsOfFour()
     {
         foreach ($this->values as $value => $qty) {
-            if ($qty == 3) {
+            if ($qty == 4) {
                 return $this->pointsOfValue($value);
             }
         }
         return false;
     }
-    
-    public function hasTwoPairs()
-    {
-        $pairs = 0;
-        foreach ($this->values as $value => $qty) {
-            if ($qty == 2) {
-                if (++$pairs == 2) {
-                    return $this->topValue($value);
-                }
-            }
-        }
-        return false;
-    }
 
-    public function hasPair()
-    {
-        $values = [];
-        foreach ($this->cards as $card) {
-            if (isset($values[$card->getValue()])) {
-                return true;
-            }
-            $values[$card->getValue()] = 1;
-        }
-        return false;
-    }
-
+    /* PONTUAÇÃO */
     public function topValue($returnPoints = false)
     {
         for ($i=count($this->orderValues)-1; $i>=0; $i--) {
@@ -245,33 +315,33 @@ class Hand
         if ($this->hasRoyalFlush()) {
             // Testar se são as mesmas cartas, se for retornar
             // TODO: teste
-            return 90000000000;
+            return POINTS_ROYALFLUSH;
         } elseif ($this->hasStraightFlush()) {
             // Testar se são as mesmas cartas, se for retornar
             // TODO: retornar valor da carta maior na sequencia
-            return 80000000000;
+            return self::POINTS_STRAIGHTFLUSH + $this->pointsOfStraight();
         } elseif ($this->hasFourkind()) {
             // TODO: retornar valor da carta que fez quadra
-            return 70000000000;
-        } elseif ($this->hasTriple() && $this->hasPair()) {
+            return self::POINTS_FOUR + $this->pointsOfFour();
+        } elseif ($this->hasFullHouse()) {
             // TODO: garantir que o pair seja diferente da trinca
             // TODO: retornar valores das cartas do Full House
-            return 60000000000;
+            return self::POINTS_FULLHOUSE + $this->pointsOfFullHouse();
         } elseif ($this->hasFlush()) {
             // TODO: retornar valor da maior carta do flush
-            return 50000000000 + $this->hasFlush();
+            return self::POINTS_FLUSH + $this->pointsOfFlush();
         } elseif ($this->hasStraight()) {
             // TODO: Retornar valor da maior carta da sequência
-            return 40000000000;
+            return self::POINTS_STRAIGHT + $this->pointsOfStraight();
         } elseif ($this->hasTriple()) {
             // TODO: Retornar valor da carta que fez trinca
-            return 30000000000 + $this->hasTriple();
+            return self::POINTS_THREE + $this->pointsOfTriple();
         } elseif ($this->hasTwoPairs()) {
             // TODO: Retornar valor da carta que fez trinca
-            return 20000000000 + $this->hasTwoPairs();
+            return self::POINTS_TWOPAIRS + $this->pointsOfTwoPairs();
         } elseif ($this->hasPair()) {
             // TODO: Retornar valor da carta que fez trinca
-            return 10000000000 + $this->hasPair();
+            return self::POINTS_PAIR + $this->pointsOfPair();
         } else {
             // TODO: Retornar valor da carta que fez trinca
             return 0100 + $this->topValue();

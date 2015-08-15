@@ -16,8 +16,6 @@ class Game
         $this->deck = new Deck();
         $this->phases = ['playerCards', 'threeCardsToTable', 'fourthCardToTable', 'fifthCardToTable'];
         $this->players = [];
-
-        $this->sim();
     }
 
     public function addPlayer(Player $player)
@@ -74,10 +72,10 @@ class Game
     {
         $this->addPlayer(new Player());
         $this->addPlayer(new Player());
-        // $this->addPlayer(new Player());
-        // $this->addPlayer(new Player());
-        // $this->addPlayer(new Player());
-        // $this->addPlayer(new Player());
+        $this->addPlayer(new Player());
+        $this->addPlayer(new Player());
+        $this->addPlayer(new Player());
+        $this->addPlayer(new Player());
         $this->start();
         $this->playerCards();
         $this->threeCardsToTable();

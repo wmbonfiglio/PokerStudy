@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$x = new \App\Game();
+	$x->sim();
+    // return view('welcome');
 });
