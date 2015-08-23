@@ -118,4 +118,151 @@ class PokerTest extends TestCase
         $this->assertGreaterThan(Hand::POINTS_FULLHOUSE, $pontosMao);
         $this->assertLessThan(Hand::POINTS_FOUR, $pontosMao);
     }
+
+    public function testPairKicker()
+    {
+        // Os dois com par de A, mas o kicker do player 1 é maior
+        $cardsPlayer1 = [new Card('Ouros', 'A'), new Card('Copas', 'K')];
+        $cardsPlayer2 = [new Card('Espadas', 'A'), new Card('Copas', 'Q')];
+        $cardsTable  = [
+            new Card('Paus', 'A'),
+            new Card('Paus', 7),
+            new Card('Copas', 5),
+            new Card('Espadas', 3),
+            new Card('Espadas', 2)];
+        $handPlayer1 = new Hand($cardsPlayer1, $cardsTable);
+        $handPlayer2 = new Hand($cardsPlayer2, $cardsTable);
+        $resultPlayer1 = $handPlayer1->calcularPontos();
+        $resultPlayer2 = $handPlayer2->calcularPontos();
+
+        $pontosMao1 = $resultPlayer1['pontos'];
+        $pontosMao2 = $resultPlayer2['pontos'];
+        $this->assertGreaterThan($pontosMao2, $pontosMao1);
+    }    
+
+    public function testTwoPairsKicker()
+    {
+        // Os dois com par de A e par de 5, mas player 1 com kicker maior
+        $cardsPlayer1 = [new Card('Ouros', 'A'), new Card('Copas', 'K')];
+        $cardsPlayer2 = [new Card('Espadas', 'A'), new Card('Copas', 'Q')];
+        $cardsTable  = [
+            new Card('Paus', 'A'),
+            new Card('Paus', 5),
+            new Card('Copas', 5),
+            new Card('Espadas', 3),
+            new Card('Espadas', 2)];
+        $handPlayer1 = new Hand($cardsPlayer1, $cardsTable);
+        $handPlayer2 = new Hand($cardsPlayer2, $cardsTable);
+        $resultPlayer1 = $handPlayer1->calcularPontos();
+        $resultPlayer2 = $handPlayer2->calcularPontos();
+
+        $pontosMao1 = $resultPlayer1['pontos'];
+        $pontosMao2 = $resultPlayer2['pontos'];
+        $this->assertGreaterThan($pontosMao2, $pontosMao1);
+    }
+
+    public function testTripleKicker()
+    {
+        // Os dois com trinca de A, mas player 1 com kicker maior
+        $cardsPlayer1 = [new Card('Ouros', 'A'), new Card('Copas', 'K')];
+        $cardsPlayer2 = [new Card('Espadas', 'A'), new Card('Copas', 'Q')];
+        $cardsTable  = [
+            new Card('Paus', 'A'),
+            new Card('Copas', 'A'),
+            new Card('Paus', 5),
+            new Card('Espadas', 3),
+            new Card('Espadas', 2)];
+        $handPlayer1 = new Hand($cardsPlayer1, $cardsTable);
+        $handPlayer2 = new Hand($cardsPlayer2, $cardsTable);
+        $resultPlayer1 = $handPlayer1->calcularPontos();
+        $resultPlayer2 = $handPlayer2->calcularPontos();
+
+        $pontosMao1 = $resultPlayer1['pontos'];
+        $pontosMao2 = $resultPlayer2['pontos'];
+        $this->assertGreaterThan($pontosMao2, $pontosMao1);
+    }
+
+    public function testStraightKicker()
+    {
+        // Os dois com sequencia, mas player 1 com sequencia maior
+        $cardsPlayer1 = [new Card('Ouros', 'A'), new Card('Copas', 'K')];
+        $cardsPlayer2 = [new Card('Espadas', 'K'), new Card('Copas', 'Q')];
+        $cardsTable  = [
+            new Card('Paus', 'Q'),
+            new Card('Paus', 'J'),
+            new Card('Copas', 10),
+            new Card('Espadas', 9),
+            new Card('Espadas', 2)];
+        $handPlayer1 = new Hand($cardsPlayer1, $cardsTable);
+        $handPlayer2 = new Hand($cardsPlayer2, $cardsTable);
+        $resultPlayer1 = $handPlayer1->calcularPontos();
+        $resultPlayer2 = $handPlayer2->calcularPontos();
+
+        $pontosMao1 = $resultPlayer1['pontos'];
+        $pontosMao2 = $resultPlayer2['pontos'];
+        $this->assertGreaterThan($pontosMao2, $pontosMao1);
+    }
+
+    public function testFlushKicker()
+    {
+        // Os dois com flush, mas player 1 com carta maior
+        $cardsPlayer1 = [new Card('Ouros', 'A'), new Card('Copas', 'K')];
+        $cardsPlayer2 = [new Card('Ouros', 'K'), new Card('Copas', 'Q')];
+        $cardsTable  = [
+            new Card('Ouros', 'Q'),
+            new Card('Ouros', 'J'),
+            new Card('Ouros', 10),
+            new Card('Ouros', 2),
+            new Card('Espadas', 9)];
+        $handPlayer1 = new Hand($cardsPlayer1, $cardsTable);
+        $handPlayer2 = new Hand($cardsPlayer2, $cardsTable);
+        $resultPlayer1 = $handPlayer1->calcularPontos();
+        $resultPlayer2 = $handPlayer2->calcularPontos();
+
+        $pontosMao1 = $resultPlayer1['pontos'];
+        $pontosMao2 = $resultPlayer2['pontos'];
+        $this->assertGreaterThan($pontosMao2, $pontosMao1);
+    }
+
+    public function testFullHouseTripleKicker()
+    {
+        // Os dois com full house, mas player 1 com carta maior
+        $cardsPlayer1 = [new Card('Ouros', 'A'), new Card('Copas', 'A')];
+        $cardsPlayer2 = [new Card('Ouros', 'K'), new Card('Copas', 'K')];
+        $cardsTable  = [
+            new Card('Ouros', 5),
+            new Card('Espadas', 5),
+            new Card('Paus', 5),
+            new Card('Ouros', 4),
+            new Card('Espadas', 'A')];
+        $handPlayer1 = new Hand($cardsPlayer1, $cardsTable);
+        $handPlayer2 = new Hand($cardsPlayer2, $cardsTable);
+        $resultPlayer1 = $handPlayer1->calcularPontos();
+        $resultPlayer2 = $handPlayer2->calcularPontos();
+
+        $pontosMao1 = $resultPlayer1['pontos'];
+        $pontosMao2 = $resultPlayer2['pontos'];
+        $this->assertGreaterThan($pontosMao2, $pontosMao1);
+    }
+
+    public function testFullHousePairKicker()
+    {
+        // Os dois com full house, mas player 1 com carta maior
+        $cardsPlayer1 = [new Card('Ouros', 'A'), new Card('Copas', 'K')];
+        $cardsPlayer2 = [new Card('Espadas', 'A'), new Card('Copas', 3)];
+        $cardsTable  = [
+            new Card('Ouros', 5),
+            new Card('Espadas', 5),
+            new Card('Paus', 'A'),
+            new Card('Ouros', 'A'),
+            new Card('Espadas', 'K')];
+        $handPlayer1 = new Hand($cardsPlayer1, $cardsTable);
+        $handPlayer2 = new Hand($cardsPlayer2, $cardsTable);
+        $resultPlayer1 = $handPlayer1->calcularPontos();
+        $resultPlayer2 = $handPlayer2->calcularPontos();
+
+        $pontosMao1 = $resultPlayer1['pontos'];
+        $pontosMao2 = $resultPlayer2['pontos'];
+        $this->assertGreaterThan($pontosMao2, $pontosMao1);
+    }
 }

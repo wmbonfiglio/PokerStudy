@@ -23,6 +23,8 @@ class Deck
     public function shuffleCards()
     {
         shuffle($this->cards);
+        shuffle($this->cards);
+        shuffle($this->cards);
     }
 
     public function getOneCard()

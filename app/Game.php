@@ -9,13 +9,22 @@ class Game
     private $players;
     private $phases;
     private $phase;
+    private $bestHands;
+    private $gameResult;
+    private $startOfGame;
+    private $endOfGame;
 
     public function __construct()
     {
         $this->table = new Table();
         $this->deck = new Deck();
-        $this->phases = ['playerCards', 'threeCardsToTable', 'fourthCardToTable', 'fifthCardToTable'];
+        $this->phases = ['start', 'playerCards', 'threeCardsToTable', 'fourthCardToTable', 'fifthCardToTable', 'calculate'];
+        $this->phase = null;
         $this->players = [];
+        $this->bestHands = null;
+        $this->gameResult = null;
+        $this->startOfGame = false;
+        $this->endOfGame = false;
     }
 
     public function addPlayer(Player $player)
@@ -28,12 +37,41 @@ class Game
         return true;
     }
 
-    public function start()
+    public function nextPhase()
+    {
+        $phase = array_search($this->phase, $this->phases);
+        if ($phase === false) {
+            $phase = 0;
+        } else {
+            $phase++;
+        }
+
+        if (!isset($this->phases[$phase])) {
+            return false;
+        }
+
+        if ($this->{$this->phases[$phase]}() !== false) {
+            $this->phase = $this->phases[$phase];
+            return true;
+        }
+
+        return false;
+    }
+    
+    /*
+    $x=new \App\Game;
+    $x->addPlayer(new \App\Player());
+    $x->addPlayer(new \App\Player());
+    $x->nextPhase();
+     */
+    
+    private function start()
     {
         // Condições para começar
         // - 2 jogadores
         // - deck com 54 cartas
         $this->deck->shuffleCards();
+        $this->startOfGame = true;
     }
 
     private function playerCards()
@@ -49,6 +87,8 @@ class Game
 
     private function threeCardsToTable()
     {
+        // Descarte
+        $this->deck->getOneCard();
         // Três cartas para a mesa
         for ($i=0; $i<3; $i++) {
             $card = $this->deck->getOneCard();
@@ -58,47 +98,85 @@ class Game
 
     private function fourthCardToTable()
     {
+        // Descarte
+        $this->deck->getOneCard();
+
         $card = $this->deck->getOneCard();
         $this->table->addCard($card);
     }
 
     private function fifthCardToTable()
     {
+        // Descarte
+        $this->deck->getOneCard();
+
         $card = $this->deck->getOneCard();
         $this->table->addCard($card);
     }
 
-    public function sim() //simulateFullGame()
+    private function calculate()
     {
-        $this->addPlayer(new Player());
-        $this->addPlayer(new Player());
-        $this->addPlayer(new Player());
-        $this->addPlayer(new Player());
-        $this->addPlayer(new Player());
-        $this->addPlayer(new Player());
-        $this->start();
-        $this->playerCards();
-        $this->threeCardsToTable();
-        $this->fourthCardToTable();
-        $this->fifthCardToTable();
-        $this->table->printCards();
+        $this->gameResult = new GameResult($this->table, $this->players);
+
+        $this->endOfGame = true;
+    }
+
+    private function calculateOLD()
+    {
         $bestHand = ['pontos' => 0];
-        foreach ($this->players as $key => $player) {
-            print PHP_EOL . 'Jogador ' . $key . ':' . PHP_EOL;
-            $player->printCards();
-            $hand = new Hand($player->getCards(), $this->table->getCards());
+        foreach ($this->players as $key => &$player) {
+            $hand = new Hand($player['player']->getCards(), $this->table->getCards());
             $retorno = $hand->calcularPontos();
-            // echo "Pontos: " . $retorno['pontos'] . "\n";
-            // echo "Cartas: ";
-            // var_dump($retorno['cartas']);
-            // echo "\n\n";
+            $player['result'] = $retorno;
             if ($retorno['pontos'] > $bestHand['pontos']) {
                 $bestHand = $retorno;
-                $bestHand['jogador'] = $player;
+                $bestHand['jogador'] = $player['player'];
             } elseif ($retorno['pontos'] == $bestHand['pontos']) {
                 // TODO: tratar empate
             }
         }
-        var_dump($bestHand);
+        $this->bestHands = $bestHand;
+
+        $this->endOfGame = true;
+    }
+
+    public function printTableCards()
+    {
+        $this->table->printCards();
+    }
+
+    public function printPlayerCards()
+    {
+        if ($this->endOfGame === false) {
+            print PHP_EOL . '*** Wait the end of game :)' . PHP_EOL;
+            return false;
+        }
+
+        foreach ($this->players as $key => $player) {
+            print PHP_EOL . 'Jogador ' . $key . ':' . PHP_EOL;
+            $player->printCards();
+        }
+    }
+
+    public function printCards()
+    {
+        $this->printTableCards();
+        $this->printPlayerCards();
+    }
+
+    public function printResults()
+    {
+        $this->gameResult->printAllResults();
+    }
+
+    public function getResults()
+    {
+        return $this->gameResult;
+        // return ['players' => $this->players, 'table' => $this->table, 'mostPoints' => $this->gameResult->getMaxPoints()];
+    }
+
+    public function gameFinished()
+    {
+        return $this->endOfGame;
     }
 }

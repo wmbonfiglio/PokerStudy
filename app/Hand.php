@@ -34,6 +34,7 @@ class Hand
     private $suits;
     private $qtyValues;
     private $qtySuits;
+    private $pointsCalculated;
 
     /*
      - Royal Flush
@@ -62,6 +63,7 @@ class Hand
     private function init() {
         $this->values = [];
         $this->suits = [];
+        $this->pointsCalculated = false;
 
         foreach ($this->cards as $key => $card) {
             if (isset($this->values[$card->getValue()])) {
@@ -88,7 +90,6 @@ class Hand
         if (!$this->hasFlush() || $this->hasStraight() !== 'A') {
             return false;
         }
-        // TODO: Se tem Flush e uma sequencia com final A, agora precisa garantir que são as mesmas cartas
         
         return true;
     }
@@ -99,7 +100,7 @@ class Hand
         if (!$this->hasFlush() || $this->hasStraight() === false) {
             return false;
         }
-        // TODO: Se tem Flush e uma sequencia, agora precisa garantir que são as mesmas cartas
+
         return true;
     }
 
@@ -110,16 +111,16 @@ class Hand
                 return true;
             }
         }
+
         return false;
     }
 
     public function hasFullHouse()
     {
-        // Verificação mais rápida e condição para o full house
         if ($this->hasTriple() && $this->hasPair()) {
             return true;
         }
-        // Caso tenha um triple, é possível que 1) tenha outro triple ou 2) tenha um double
+
         return false;
     }
 
@@ -128,9 +129,9 @@ class Hand
         foreach ($this->suits as $suit => $qty) {
             if ($qty >= 5) {
                 return true;
-                // return $this->topValue();
             }
         }
+
         return false;
     }
 
@@ -151,6 +152,7 @@ class Hand
                 $sequencia = 0;
             }
         }
+
         return false;
     }
     
@@ -161,6 +163,7 @@ class Hand
                 return true;
             }
         }
+
         return false;
     }
     
@@ -174,6 +177,7 @@ class Hand
                 }
             }
         }
+
         return false;
     }
 
@@ -184,51 +188,80 @@ class Hand
                 return true;
             }
         }
+
         return false;
     }
 
     /* PONTUAÇÃO MÃOS */
-    // TODO: precisa calcular os kickers - a conta para a mão está certa, falta tratar empates
+    // OK
     public function pointsOfPair()
     {
-        foreach ($this->values as $value => $qty) {
-            if ($qty == 2) {
-                return $this->pointsOfValue($value);
-            }
-        }
-        return false;
-    }
-
-    public function pointsOfTwoPairs()
-    {
         $points = [];
+        $returnPoints = 0;
         foreach ($this->values as $value => $qty) {
             if ($qty == 2) {
+                $returnPoints += $this->pointsOfValue($value) * pow(10,6);
+            } else {
                 $points[] = $this->pointsOfValue($value);
             }
         }
         rsort($points);
-        return $points[0] * 100 + $points[1];
+
+        return
+            $returnPoints 
+            + $points[0] * pow(10,4) 
+            + $points[1] * pow(10,2)
+            + $points[2];
     }
 
-    public function pointsOfTriple()
+    // OK
+    public function pointsOfTwoPairs()
     {
+        $points = [];
+        $returnPoints = 0;
         foreach ($this->values as $value => $qty) {
-            if ($qty == 3) {
-                return $this->pointsOfValue($value);
+            if ($qty == 2) {
+                $points[] = $this->pointsOfValue($value);
+            } else {
+                $returnPoints += $this->pointsOfValue($value);
             }
         }
-        return false;
+        rsort($points);
+        return ($points[0] * 10000) + ($points[1] * 100) + $returnPoints;
     }
 
+    // OK
+    public function pointsOfTriple()
+    {
+        $points = [];
+        $returnPoints = 0;
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 3) {
+                $returnPoints += $this->pointsOfValue($value) * pow(10,4);
+            } else {
+                $points[] = $this->pointsOfValue($value);
+            }
+        }
+        rsort($points);
+        return $points[0] * 100 + $points[1] + $returnPoints;
+    }
+
+    // OK
     public function pointsOfFullHouse()
     {
-        $pointsTriple = $this->pointsOfTriple();
-        $pointsPair = $this->pointsOfPair();
+        $returnPoints = 0;
+        foreach ($this->values as $value => $qty) {
+            if ($qty == 2) {
+                $returnPoints += $this->pointsOfValue($value);
+            } elseif ($qty == 3) {
+                $returnPoints += (100 * $this->pointsOfValue($value));
+            }
+        }
 
-        return $pointsTriple * 100 + $pointsPair;
+        return $returnPoints;
     }
 
+    // OK
     public function pointsOfStraight()
     {
         $sequencia = 0;
@@ -239,7 +272,7 @@ class Hand
         for ($i=count($this->orderStraight)-1; $i>=0; $i--) {
             if (isset($cards[$this->orderStraight[$i]])) {
                 if (++$sequencia == 5) {
-                    return $this->orderStraight[$i+4];
+                    return $this->pointsOfValue($this->orderStraight[$i+4]);
                 }
             } else {
                 $sequencia = 0;
@@ -248,6 +281,7 @@ class Hand
         return false;
     }
 
+    // OK
     public function pointsOfFlush()
     {
         $points = [];
@@ -264,14 +298,18 @@ class Hand
             + $points[4];
     }
 
+    // OK
     public function pointsOfFour()
     {
+        $returnPoints = 0;
         foreach ($this->values as $value => $qty) {
             if ($qty == 4) {
-                return $this->pointsOfValue($value);
+                $returnPoints += (100 * $this->pointsOfValue($value));
+            } else {
+                $returnPoints += $this->pointsOfValue($value);
             }
         }
-        return false;
+        return $returnPoints;
     }
 
     /* PONTUAÇÃO */
@@ -312,40 +350,30 @@ class Hand
 
     private function quantosPontos()
     {
-        if ($this->hasRoyalFlush()) {
-            // Testar se são as mesmas cartas, se for retornar
-            // TODO: teste
-            return POINTS_ROYALFLUSH;
+        if ($this->pointsCalculated !== false && $this->pointsCalculated > 0) {
+            // NADA :)
+        } elseif ($this->hasRoyalFlush()) {
+            $this->pointsCalculated = self::POINTS_ROYALFLUSH;
         } elseif ($this->hasStraightFlush()) {
-            // Testar se são as mesmas cartas, se for retornar
-            // TODO: retornar valor da carta maior na sequencia
-            return self::POINTS_STRAIGHTFLUSH + $this->pointsOfStraight();
+            $this->pointsCalculated = self::POINTS_STRAIGHTFLUSH + $this->pointsOfStraight();
         } elseif ($this->hasFourkind()) {
-            // TODO: retornar valor da carta que fez quadra
-            return self::POINTS_FOUR + $this->pointsOfFour();
+            $this->pointsCalculated = self::POINTS_FOUR + $this->pointsOfFour();
         } elseif ($this->hasFullHouse()) {
-            // TODO: garantir que o pair seja diferente da trinca
-            // TODO: retornar valores das cartas do Full House
-            return self::POINTS_FULLHOUSE + $this->pointsOfFullHouse();
+            $this->pointsCalculated = self::POINTS_FULLHOUSE + $this->pointsOfFullHouse();
         } elseif ($this->hasFlush()) {
-            // TODO: retornar valor da maior carta do flush
-            return self::POINTS_FLUSH + $this->pointsOfFlush();
+            $this->pointsCalculated = self::POINTS_FLUSH + $this->pointsOfFlush();
         } elseif ($this->hasStraight()) {
-            // TODO: Retornar valor da maior carta da sequência
-            return self::POINTS_STRAIGHT + $this->pointsOfStraight();
+            $this->pointsCalculated = self::POINTS_STRAIGHT + $this->pointsOfStraight();
         } elseif ($this->hasTriple()) {
-            // TODO: Retornar valor da carta que fez trinca
-            return self::POINTS_THREE + $this->pointsOfTriple();
+            $this->pointsCalculated = self::POINTS_THREE + $this->pointsOfTriple();
         } elseif ($this->hasTwoPairs()) {
-            // TODO: Retornar valor da carta que fez trinca
-            return self::POINTS_TWOPAIRS + $this->pointsOfTwoPairs();
+            $this->pointsCalculated = self::POINTS_TWOPAIRS + $this->pointsOfTwoPairs();
         } elseif ($this->hasPair()) {
-            // TODO: Retornar valor da carta que fez trinca
-            return self::POINTS_PAIR + $this->pointsOfPair();
+            $this->pointsCalculated = self::POINTS_PAIR + $this->pointsOfPair();
         } else {
-            // TODO: Retornar valor da carta que fez trinca
-            return 0100 + $this->topValue();
+            $this->pointsCalculated = 0100 + $this->topValue();
         }
+        return $this->pointsCalculated;
     }
 
     // http://iswwwup.com/t/6fb50c978e91/all-combinations-of-r-elements-from-given-array-php.html

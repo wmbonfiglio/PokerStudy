@@ -11,6 +11,8 @@ Toda a lógica do jogo está na pasta /app. Cada arquivo .php representa uma par
  - /App/Table.php é a lógica da mesa, que funciona como se fosse um jogador
  - /App/Hand.php é onde está a lógica para calcular o valor de uma mão (as regras do jogo)
  - /App/Game.php é onde está a lógica do jogo, desde instanciar cada objeto até seguir as etapas do jogo
+ - /App/GameResult.php é onde é feito o cálculo do resultado do jogo
+ - /App/Simulator.php é uma classe para auxiliar na execução de um ou mais jogos ao mesmo tempo
 
 ## Tests
 

@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "wmbonfiglio/PokerStudyProject",
+    "description": "Um projeto para estudar as mãos do Poker Texas",
+    "keywords": ["laravel", "poker"],
     "license": "MIT",
     "type": "project",
     "require": {
